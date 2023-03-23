@@ -18,14 +18,15 @@ import { MatTableModule } from '@angular/material/table'
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout'
-
+import { ApiService } from 'src/Services/api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriaComponent,
     CategoriaNovoComponent,
-    MenuComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,7 @@ import { LayoutModule } from '@angular/cdk/layout'
     MatSidenavModule,
     MatTableModule,
     MatToolbarModule,
-    LayoutModule
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

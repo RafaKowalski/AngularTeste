@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { catchError, tap, map } from 'rxjs/operators'
 import { Categoria } from 'src/model/Categoria';
 
-const apiUrl = 'https://localhost:44390/api/categorias';
+const apiUrl = 'https://localhost:7140/swagger/index.html';
 var httpOptions = {headers: new HttpHeaders({"Content-Type": "application/json"})};
 
 @Injectable({
